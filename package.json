@@ -16,6 +16,7 @@
     "url": "https://github.com/Oyamasiphula/free_basic_mobile_app/issues"
   },
   "dependencies": {
+    "bower": "^1.7.0",
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
     "handlebars": "^4.0.5"
