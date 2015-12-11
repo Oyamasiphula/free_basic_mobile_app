@@ -1,13 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
-header .logo img {
-    position: relative;
+.logo img {
+	margin-left: 178px;
     display: inline-block;
-    z-index: 2;
+    /*z-index: 2;*/
+    text-align: center;
 }
 .header .logo, .header .logo img {
-    width: 150px;
-}
-img {
     width: 150px;
 }
 
@@ -15,6 +13,17 @@ ha{
 	font-size: 18;
 
 }
+
+lg {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    text-align: center;
+    -webkit-margin-end: 0px;
+}
+Inherited from div.logo
+
 
 span.dropBottom,span.dropRight {
 	display: block;
@@ -38,9 +47,10 @@ h1 {
   
 }
 nav {
-	display:table;
-	margin:50px auto;
-  box-shadow:0px 2px 0px #023333;
+    display: table;
+    margin: -9px auto;
+    box-shadow: 0px 2px 0px #023333;
+    margin-bottom: 92px;
 }
 ul {
 	margin:0;

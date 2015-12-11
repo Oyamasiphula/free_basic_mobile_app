@@ -14,6 +14,17 @@
 /*html {
   background-color: #ff4a56;
 }*/
+.content1 {
+    color: darkgreen;
+    display: block;
+    -webkit-margin-before: 7em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 300px;
+    -webkit-margin-end: 300px;
+    background-color: rgba(166, 241, 166, 0.31);
+    border-radius: 10px;
+    padding: 5px;
+}
 
 form {
   position: relative;
@@ -135,6 +146,8 @@ select {
     color: yellowgreen;
     border: radius;
     border-bottom: 1px solid rgba(0,0,0, 0.12);
+    rgba(0,0,0, 0.12);
+    margin-top: 36px;
 }
 
 /* Remove focus */
@@ -156,7 +169,7 @@ select:focus {
 
 .mdl-selectfield {
     font-family: 'Roboto','Helvetica','Arial',sans-serif;
-    position: fixed;
+    /*position: fixed;*/
 }
 .mdl-selectfield:after {
   position: absolute;
@@ -185,3 +198,35 @@ select:focus {
   left: 0;
 }
 /*select style above*/
+
+.row{
+    margin: 50px;
+
+
+}
+
+img {
+    height: 59px;
+    width: 150px;
+    background: rgba(0, 0, 0, 0.38);
+}
+
+small {
+    font-size: smaller;
+    text-decoration: underline;
+
+}
+
+div .sm {
+     font-size: smaller;
+}
+
+label .sm {
+     font-size: smaller;
+
+}
+
+input {
+  text-align: center;
+
+}

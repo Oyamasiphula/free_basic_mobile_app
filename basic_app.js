@@ -15,6 +15,14 @@ app.get("/", function (req,res) {
     res.render("home")
 })
 
+app.get("/applicationForm", function (req,res) {
+    res.render("question1")
+})
+
+app.get("/codecademy", function (req,res) {
+    res.render("codecademy")
+})
+
 // app.get("/", function (req,res) {
 //     res.render("home")
 // })
