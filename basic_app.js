@@ -13,21 +13,23 @@ app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 
 app.get("/", function (req,res) {
     res.render("home")
-})
+});
 
 app.get("/applicationForm", function (req,res) {
     res.render("question1")
-})
+});
+
+
+app.get("/question2", function (req,res) {
+    res.render("question2")
+});
+app.post("/question2", function (req,res) {
+    res.render("question2")
+});
 
 app.get("/codecademy", function (req,res) {
     res.render("codecademy")
-})
-
-// app.get("/", function (req,res) {
-//     res.render("home")
-// })
-// app.get('/formPge1', formPge1.show)
-// app.post('/formPge1/add', formPge1.add)
+});
 
 //start everything up
 var port = process.env.port ||    2010;
