@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'muli';
+  src: url('/css/Muli/Muli-Regular.ttf') format('truetype');
+}
+
+body {
+    font-family: 'muli',sans-serif;
+}
+
 .transition, form button, form .question label, form .question input[type="text"] {
   -moz-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
   -o-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
@@ -12,9 +21,8 @@
 }
 
 * {
-  font-family: Helvetica, sans-serif;
-  font-weight: light;
-  -webkit-font-smoothing: antialiased;
+    font-family: 'muli', sans-serif;
+  /* -webkit-font-smoothing: antialiased; */
 }
 
 /*html {
@@ -29,25 +37,27 @@
     -webkit-margin-end: 300px;
     background-color: #8bc53f;
     padding: 5px;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
+    -webkit-border-radius: 12px; 
+  /* Firefox 1-3.6 */
+    -moz-border-radius: 12px; 
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+    border-radius: 12px; 
 }
 
 
 form {
-  position: relative;
-  /*display: inline-block;*/
-  box-sizing: border-box;
-  padding: 30px 25px;
-  background-color: white;
-  border-radius: 40px;
-  margin: 40px 0;
-  left: 50%;
-  -moz-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  -webkit-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+    position: absolute;
+    /* display: inline-block; */
+    box-sizing: border-box;
+    /* padding: 30px 25px; */
+    background-color: white;
+    border-radius: 40px;
+    /* margin: 40px 0; */
+    left: 50%;
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
 }
 form h1 {
   color: #ff4a56;
@@ -59,31 +69,23 @@ form h1 {
 }
 form button {
     margin-top: 35px;
-    margin-left: 15px;
-    background-color: rgba(139, 197, 63, 0.46);
-    border: 1px solid #8bc53f;
+    background-color: #8bc53f;
+    border: 1px solid #188616;
     line-height: 0;
     font-size: 17px;
     display: inline-block;
     box-sizing: border-box;
     padding: 20px 15px;
     border-radius: 0.5em;
-    color: #1A1B1B;
     font-weight: 100;
     letter-spacing: 0.01em;
     position: relative;
-    float: right;
+    z-index: 1;
 }
-
-form button.back {
-        background-color: #009c75;
-}
-
 form button:hover, form button:focus {
-    /* color: #30843c; */
-    background-color: #8bc53f;
-}-color: #ff4a56;
-
+  color: white;
+  background-color: #ff4a56;
+}
 form .question {
   position: relative;
   padding: 10px 0;
@@ -255,15 +257,16 @@ select:focus {
 .mdl-selectfield label {
   display: none;
 }
+
 /* Use custom arrow */
 .mdl-selectfield select {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
+
 .mdl-selectfield {
-    font-family: 'Roboto','Helvetica','Arial',sans-serif;
-    /*position: fixed;*/
+    font-family: 'muli',sans-serif;
 }
 .mdl-selectfield:after {
     position: relative;
@@ -278,6 +281,7 @@ select:focus {
     border-top: 0.375em solid rgba(0,0,0, 0.12);
     pointer-events: none;
 }
+
 .form-pagebreak {
     margin: 0 36px;
     border-top: 1px solid #e3e3e3;
@@ -285,6 +289,7 @@ select:focus {
     height: auto;
     overflow: hidden;
 }
+
 .demo {
   margin: 0 auto;
   top: 50%;
@@ -294,33 +299,40 @@ select:focus {
   left: 0;
 }
 /*select style above*/
-.row{
-    margin: 50px;
+
+
+.row {
+    /* display: inline-block; */
+    min-width: 11%;
+    min-height: 243%;
+    /* margin: inherit; */
+    content: initial;
 }
+
 img {
     height: 59px;
     width: 150px;
     background: rgba(0, 0, 0, 0.38);
 }
+
 small {
     font-size: smaller;
-}
-small.underlined {
-    font-size: smaller;
     text-decoration: underline;
+
 }
-small.shrinked {
-    font-size: x-small;
-}
-div .text-content {
+
+div .sm {
      font-size: smaller;
      padding: 5px;
     line-height: 150%;
 }
+
 div .personalHd {
     font-size: smaller;
-    position: fixed;
+    position: static;
+
 }
+
 label .sm {
      font-size: smaller;
      width: 600px; padding: 5px;
@@ -331,6 +343,57 @@ input {
     border-radius: 10px;
     border-color: mediumspringgreen;
 }
+
+.btn-4 {
+    border-radius: 13px;
+    border: 3px solid #188616;
+    color: #FFF;
+    overflow: hidden;
+    font-family: inherit;
+    /* font-size: inherit; */
+    color: inherit;
+    background: transparent none repeat scroll 0% 0%;
+    cursor: pointer;
+    padding: 10px 5px;
+    display: inline-block;
+    margin: 15px 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: medium none;
+    position: relative;
+    transition: all 0.3s ease 0s;
+    float: right;
+}
 .person{
   display: -webkit-inline-box;
 }
+
+/*below is the strucure of html content*/
+ @media only screen and (max-device-width: 480px) {
+    div#wrapper {
+      width: 400px;
+    }
+
+    div#header {
+      background-image: url(media-queries-phone.jpg);
+      height: 93px;
+      position: relative;
+    }
+
+    div#header h1 {
+      font-size: 140%;
+    }
+
+    #content {
+      float: none;
+      width: 100%;
+    }
+
+    #navigation {
+      float:none;
+      width: auto;
+    }
+  }
+
+  /*above is the structure of html content*/
