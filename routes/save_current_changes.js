@@ -7,6 +7,7 @@ exports.getSavedInfoPg1 = function(req,res,next){
 		});
 	});
 };
+
 exports.getSavedInfoPg2 = function(req,res,next){
 	req.getConnection(function(err,connection){
 		connection.query('select * from applicants WHERE applicants.applicant_id LIKE ?',function(err,result){
