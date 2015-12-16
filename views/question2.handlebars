@@ -51,8 +51,8 @@ Tell us what level of education you have, where you studied and whether you have
 <div class="text-content">We need the contact details of someone outside of your family who knows you who can vouch for your character and talent.</p>
 This could be someone you've worked with, or who has taught or mentored you, or someone else who is professionally qualified.
 </div>
-
-			<div class="personalHd"><strong>Reference Name and Surname</strong></div><br>
+<br>
+			<div class="personalHd"><strong>Reference Name and Surname</strong></div>
 			<div class="person">
 				<div class="question">
 			    	<input type="text" required/>
@@ -75,24 +75,32 @@ This could be someone you've worked with, or who has taught or mentored you, or 
 				  	</div>
 	<div class="demo">
           <!-- Standard Select -->
-          <div class="mdl-selectfield">
-            <label>Standard Select</label>
-            <select class="browser-default">
-              <option value="" disabled selected><strong>My reference was my...</strong></option>
-              <option value="1">Teacher</option>
-              <option value="2">Mentor</option>
-              <option value="3">Employer</option>
-            </select>
-          </div>
-          	<span class="form-radio-item" >
-              <input type="radio">
-              <input type="text" placeholder="other">
-            </span>
-    </div><br>
+	      <div class="mdl-selectfield">
+	        <label>Standard Select</label>
+	        <select class="browser-default">
+	          <option value="" disabled selected><strong>My reference was my...</strong></option>
+	          <option value="1">Teacher</option>
+	          <option value="2">Mentor</option>
+	          <option value="3">Employer</option>
+	        </select>
+	      </div>
+      	<span class="form-radio-item" >
+          <input type="radio">
+          <input type="text" placeholder="other">
+        </span>
+	</div>
+			
+		    <br>
+			<div class="form-pagebreak">
+		  	</div>
+		  	<br>
+		    <div class="save_cont">
+		    <button class="save" onclick="location.href='/saveCurrentInfo'">Save it for later</button>
+		    </div>
 			<div class="form-pagebreak">
 				<div class="form-pagebreak-next-container">
-		  		<button>Submit</button>
-		  		<button class="back" onclick="window.location.href='/applicationForm'">Back</button> 
+		  		<button class="back" onclick="location.href='/applicationForm'">Back</button>
+		  		<button class="next" >Next</button> 
 				</div>
 			</div>
 			</form>

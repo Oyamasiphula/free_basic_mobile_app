@@ -74,17 +74,28 @@ form button {
     font-weight: 100;
     letter-spacing: 0.01em;
     position: relative;
-    float: right;
+    /*float: right;*/
 }
-
+form button.save {
+    text-align: center;
+    position: relative;
+    background-color: rgba(93, 255, 74, 0.38);
+    color: forestgreen;
+    margin:auto;
+    bottom: 5px;
+    left: 30%;
+}
 form button.back {
         background-color: #009c75;
 }
-
+form button.next {
+  float: right;
+}
 form button:hover, form button:focus {
     /* color: #30843c; */
     background-color: #8bc53f;
-}-color: #ff4a56;
+    /*color: #ff4a56;*/
+}
 
 form .question {
   position: relative;
