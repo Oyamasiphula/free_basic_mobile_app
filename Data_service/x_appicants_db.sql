@@ -11,6 +11,14 @@ CREATE TABLE reference_td (
   PRIMARY KEY (`reference_id`)
 );
 
+-- Table structure for table `codecademy_mailAdrresses`
+
+CREATE TABLE codecademy_mailAdrresses (
+  `mail_id` int(200) NOT NULL AUTO_INCREMENT,
+  `email` varchar(20) NOT NULL,
+   PRIMARY KEY (`mail_id`)
+);
+
 -- Table structure for table `applicants_td`
 --
 CREATE TABLE applicants_td (
@@ -25,12 +33,17 @@ CREATE TABLE applicants_td (
   `reference_id` int(200) DEFAULT NULL, 
   `applicant_ref_link` varchar(20) NOT NULL,
   PRIMARY KEY (`applicant_id`),
+  KEY `mail_id` (`mail_id`)
   KEY `reference_id` (`reference_id`)
 );
 
 
 ALTER TABLE  `applicants_td` ADD FOREIGN KEY (  `reference_id` ) REFERENCES  `codeX_applicants_db`.`reference_td` (
 `reference_id`
+) ON DELETE RESTRICT ON UPDATE RESTRICT ;
+
+ALTER TABLE  `applicants_td` ADD FOREIGN KEY (  `mail_id` ) REFERENCES  `codeX_applicants_db`.`codecademy_mailAdrresses` (
+`mail_id`
 ) ON DELETE RESTRICT ON UPDATE RESTRICT ;
 
 -- Dumping data for table `category`
