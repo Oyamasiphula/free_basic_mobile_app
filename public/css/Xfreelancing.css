@@ -192,6 +192,12 @@ form .question input[type="date"]:valid ~ label {
   -webkit-transform: translate(5px, -35px) scale(0.6);
   transform: translate(5px, -35px) scale(0.6);
 }
+textarea {
+    /*color: inherit;*/
+    line-height: auto;
+    /*font: inherit;*/
+    /*margin: 0;*/
+}
 
 form .question textarea[type="text"] {
     appearance: none;
@@ -224,12 +230,12 @@ form .question textarea[type="text"]:focus ~ label {
   transform: translate(0, -35px);
 }
 form .question textarea[type="text"]:valid ~ label {
-  text-transform: uppercase;
-  font-style: italic;
-  -moz-transform: translate(5px, -35px) scale(0.6);
-  -ms-transform: translate(5px, -35px) scale(0.6);
-  -webkit-transform: translate(5px, -35px) scale(0.6);
-  transform: translate(5px, -35px) scale(0.6);
+    text-transform: uppercase;
+    font-style: italic;
+    -moz-transform: translate(5px, -35px) scale(0.6);
+    -ms-transform: translate(5px, -35px) scale(0.6);
+    -webkit-transform: translate(5px, -35px) scale(0.6);
+    transform: translate(5px, -151px) scale(0.6);
 }
 
 
@@ -340,6 +346,14 @@ form .question input[type="tel"]:valid ~ label {
 }
 
 .transition, form button, form .question label, form .question input[type="email"] {
+  -moz-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  -o-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  -webkit-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+}
+
+.transition, form button, form .question label, form .question textarea[type="text"] {
+
   -moz-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
   -o-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
   -webkit-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
