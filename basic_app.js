@@ -4,7 +4,7 @@ var express = require('express'),
 	myConnection = require('express-myconnection'),
 	session = require('express-session'),
 	bodyParser = require('body-parser'),
-  	applicationForm = require('./routes/applicationForm');
+  applicationForm = require('./routes/applicationForm');
 
 var app = express();
 
@@ -34,19 +34,21 @@ app.get("/", function (req,res) {
     res.render("home")
 });
 
-app.get("/applicationForm", function (req,res) {
-    res.render("question1")
-});
+// app.get("/applicationForm", function (req,res) {
+//     res.render("question1")
+// });
 
-app.get("/showApplicantDetails", applicationForm.showPrevQuest1Changes)
+app.get("/applicationForm", applicationForm.showQuest1)
+app.post('/applicantDetailsQ1/add', applicationForm.addApplicantInfoQ1)
 
-app.get("/applicantDetails", function (req,res) {
-    res.render("question2")
-});
+// app.get("/applicantDetails", function (req,res) {
+//     res.render("question2")
+// });
 
-app.post("/applicantDetails", function (req,res) {
-    res.render("question2")
-});
+
+// app.post("/applicantDetails", function (req,res) {
+//     res.render("question2")
+// });
 // app.post("/question2", function (req,res) {
 //     res.render("question2")
 // });

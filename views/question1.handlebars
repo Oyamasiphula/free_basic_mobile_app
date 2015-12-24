@@ -14,17 +14,19 @@ You don't need any coding experience to apply to codeX, but it helps us to know 
 We ask all of our applicants to complete two free online coding courses.<br>
 If you've done programming at school, university, or in your own time, tell us about your projects.<br>
 </div>
-    <form action="/applicantDetails" method="POST">
+    <form action="/applicantDetailsQ1/add" method="POST">
      	<div class="demo">
           <!-- Standard Select -->
           <div class="mdl-selectfield">
             <label>Standard Select</label>
-            <select class="browser-default" required>
+          <select class="browser-default" name="background_option_id" required>
               <option value="" disabled selected><strong>Have you tried coding before?</strong></option>
-              <option value="1">No, not yet</option>
-              <option value="2">Yes, a little</option>
-              <option value="3">Yes, quite a bit</option>
-            </select>
+              {{#optionsList}}
+              {{^selected}}
+              <option value="{{background_option_id}}">{{coded_before}}</option>
+              {{/selected}}
+              {{/optionsList}}
+          </select>
           </div>
       </div>
 
@@ -34,7 +36,10 @@ If you've done programming at school, university, or in your own time, tell us a
           <strong>If you already have lots of coding experience, tell us about it here:</strong>
           </h3>
             <div class="question">
-        <textarea type="text" cols="45" rows="5" id="myTextArea" required></textarea>
+              {{#experiances}}
+        <textarea type="text" cols="45" name="experiance" rows="5" id="myTextArea" value="{{experiance}}" required></textarea>
+              {{/experiances}}
+
               <label>About my project</label>
             </div>
 

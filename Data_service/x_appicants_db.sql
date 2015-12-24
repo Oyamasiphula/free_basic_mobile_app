@@ -74,4 +74,4 @@ INSERT INTO codecademy_mailAdrresses (email) VALUES ("Sphiwe@projectcodex.co");
 
 SELECT applicants_td.background_option_id, applicants_td.experiance, applicants_td.name, applicants_td.surname FROM applicants_td INNER JOIN coded_before_options ON applicants_td.background_option_id = coded_before_options.coded_before;
 
-SELECT applicants_td.experiance, name, coded_before FROM applicants_td INNER JOIN coded_before_options ON applicants_td.background_option_id = coded_before_options.background_option_id'
+SELECT name, coded_before FROM applicants_td INNER JOIN coded_before_options ON applicants_td.background_option_id = coded_before_options.background_option_id

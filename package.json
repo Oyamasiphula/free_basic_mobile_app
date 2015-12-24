@@ -23,6 +23,7 @@
     "express-myconnection": "^1.0.4",
     "express-session": "^1.12.1",
     "handlebars": "^4.0.5",
+    "mongodb": "^2.0.52",
     "mysql": "^2.10.0"
   },
   "devDependencies": {}
