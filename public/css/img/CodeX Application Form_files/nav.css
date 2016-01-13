@@ -22,8 +22,8 @@ lg {
     text-align: center;
     -webkit-margin-end: 0px;
 }
-Inherited from div.logo
-
+/*Inherited from div.logo
+*/
 
 span.dropBottom,span.dropRight {
 	display: block;
@@ -50,7 +50,7 @@ nav {
     display: table;
     margin: -9px auto;
     box-shadow: 0px 2px 0px #023333;
-    margin-bottom: 40px;
+    margin-bottom: 92px;
 }
 ul {
 	margin:0;
