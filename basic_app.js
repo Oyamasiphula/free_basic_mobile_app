@@ -41,14 +41,14 @@ app.get("/", function (req,res) {
 app.get("/applicationForm", applicationForm.showQuest1)
 app.post('/applicantDetailsQ1/add', applicationForm.addApplicantInfoQ1)
 
-// app.get("/applicantDetails", function (req,res) {
-//     res.render("question2")
-// });
+app.get("/applicantDetails", function (req,res) {
+    res.render("question2")
+});
 
 
-// app.post("/applicantDetails", function (req,res) {
-//     res.render("question2")
-// });
+app.post("/applicantDetails", function (req,res) {
+    res.render("question2")
+});
 // app.post("/question2", function (req,res) {
 //     res.render("question2")
 // });
