@@ -16,16 +16,11 @@ footer small.shrinked {
     font-family: sans-serif;
     line-height: 60px;
 }
-.content {
-  padding: 30px;
-  font: 300 40px Lato, sans-serif;
-  text-align: center;
-  color: #999;
-  background: #eee;
-}
 .right {
     color: #5B7575;
     width: 33.33333333%;
+    position: absolute;
+    text-align: center;
 }
 .footer {
     position: inherit;
