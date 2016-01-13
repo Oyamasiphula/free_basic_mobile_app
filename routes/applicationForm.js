@@ -43,7 +43,7 @@ exports.addApplicantInfoQ1 = function (req, res, next) {
             if (err){
                     return next(err);
             }
-            res.redirect('/applicant_info');
+            res.redirect('/applicantDetails');
         });
     });
 };
